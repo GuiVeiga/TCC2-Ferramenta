@@ -5,3 +5,9 @@ body {
 canvas {
     border:1px solid black;
 }
+
+div {
+    display: inline-block;
+    justify-content: center;
+    padding:10px;
+}

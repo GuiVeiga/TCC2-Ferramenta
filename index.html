@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <meta name="description" content="Interactive tool to get angle values from a horse image">
+  <meta name="viewport" content="width=device-width">
 
-    <p>Drag to draw lines</p>
-    <p>Previously drawn lines are stored and redrawn</p>
+  <title>Angle Horse</title>
+
+  <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
+
 <body>
-    <!--
-    <canvas id="canvas" width="800" height="600" style="border:1px solid #000000;">
-    Your browser does not support the HTML canvas tag.
-    -->
 
-    <canvas id="canvas"></canvas><br/>
+  <label for="uploader">Select file:</label>
 
-    <label for="uploader">Select file:</label>
+  <input type="file" id=uploader></div>
 
-    <input type="file" id=uploader>
+  <p id="value">Values: </p>
 
-    <p id="lineLength">Line Length: </p>
+  <canvas id="canvas"></canvas><br />
 
-    <p id="lineAngle">Line Angle: </p>
+  <p></p>
+  <button onclick="download()"> Download Image</button>
 
-    <button id="clear">Erase Lines</button>
+  <script src="script.js"></script>
 
-    <button id="download"> Download Image</button>
-
-    <script src="jquery-3.5.1.js"></script>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
